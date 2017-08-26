@@ -9,6 +9,11 @@ public class MergeSort {
 			System.out.print(i+ " ");
 		}
 	}
+	/**
+	 * @param a
+	 * @param low
+	 * @param high
+	 */
 	public static void mergeSort(int [] a,int low, int high){
 		
 		if(low < high){
@@ -19,6 +24,14 @@ public class MergeSort {
 		}		
 	}
 
+	/**
+	 * @param a the array
+	 * @param low start index of array
+	 * @param middle index of the array
+	 * @param high the end index of array
+	 * @return a the sorted array
+	 * the logic is similar to the logic of merging two sorted array
+	 */
 	public static int [] merge(int [] a, int low, int middle, int high){
 
 		int startA =low;
@@ -46,7 +59,8 @@ public class MergeSort {
 			arr[k] = a[startB];
 			k++;
 			startB++;
-		}		
+		}
+		// this is very imp to copy values from temp array to output array with correct index
 		for(int i=0;i<arr.length;i++){
 			a[low] = arr[i];
 			low++;
