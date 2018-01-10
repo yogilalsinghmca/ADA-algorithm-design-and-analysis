@@ -4,6 +4,10 @@
 	<groupId>trunk-data-structure-and-algorithm</groupId>
 	<artifactId>trunk-data-structure-and-algorithm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
